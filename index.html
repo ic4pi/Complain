@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PENULTIMATE VOID PROFANATION - FORM 882-G</title>
+    <title>ELABORATE SETTLEMENT NOTICE - Case #882-G</title>
     <style>
         :root {
-            --bg-color: #e0e0e0;
-            --text-color: #1a1a1a;
-            --border-color: #666;
-            --accent-color: #800000;
+            --bg-color: #f4f4f4;
+            --text-color: #222;
+            --border-color: #000;
+            --accent-color: #b22222; /* Legal red */
+            --highlight-color: #ffecb3;
         }
 
         body {
@@ -26,196 +27,261 @@
 
         #form-container {
             background: #fff;
-            border: 2px solid var(--border-color);
-            padding: 30px;
-            max-width: 600px;
+            border: 4px double var(--border-color);
+            padding: 40px;
+            max-width: 700px;
             width: 90%;
-            box-shadow: 5px 5px 0px #888;
+            box-shadow: 10px 10px 0px #888;
+            position: relative;
         }
 
         .step { display: none; }
         .step.active { display: block; }
 
         h1 {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
+            text-align: center;
             text-transform: uppercase;
-            border-bottom: 2px solid var(--text-color);
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--accent-color);
             margin-bottom: 20px;
             padding-bottom: 10px;
         }
 
+        .hero-banner {
+            background-color: var(--highlight-color);
+            border: 2px solid #000;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
         .meta-text {
-            font-style: oblique;
+            font-style: italic;
             font-size: 0.9rem;
             margin-bottom: 20px;
-            color: #444;
+            text-align: center;
+            color: #555;
         }
 
         .question {
             font-weight: bold;
             margin-bottom: 15px;
             display: block;
+            font-size: 1.1rem;
         }
 
         select, textarea, input {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid var(--border-color);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid var(--border-color);
             font-family: inherit;
+            font-size: 1rem;
             box-sizing: border-box;
         }
 
         .btn-group {
             display: flex;
             gap: 10px;
+            justify-content: center;
             margin-top: 20px;
         }
 
         button {
-            background: transparent;
+            background: var(--text-color);
+            color: #fff;
             border: 2px solid var(--text-color);
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-family: inherit;
+            font-weight: bold;
             cursor: pointer;
-            transition: all 0.2s;
+            text-transform: uppercase;
         }
 
         button:hover {
-            background: var(--text-color);
-            color: #fff;
-        }
-
-        .price-strike {
-            text-decoration: line-through;
-            color: #999;
-            font-size: 0.8rem;
-        }
-
-        .price-current {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: var(--accent-color);
+            background: var(--accent-color);
+            border-color: var(--accent-color);
         }
 
         .pricing-table {
             margin: 20px 0;
-            border: 1px solid #ccc;
+            border: 2px solid #000;
+            padding: 15px;
+            background: #eee;
+        }
+
+        .price-strike {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .price-current {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .warning-box {
+            border: 2px dashed var(--accent-color);
             padding: 10px;
+            margin: 20px 0;
+            font-size: 0.85rem;
+            color: var(--accent-color);
         }
     </style>
 </head>
 <body>
 
 <div id="form-container">
-    <!-- Step 1: Email Collection -->
+    <!-- Step 1: Initial Eligibility/Email Gather -->
     <div id="step-0" class="step active">
-        <h1>Form 882-G: Prefatory Data</h1>
-        <label class="question">Enter your primary contact email for our records:</label>
-        <input type="email" id="email" placeholder="user@example.com" required>
-        <button onclick="nextStep()">CONTINUE</button>
+        <div class="hero-banner">ATTENTION: POTENTIAL COMPLAINANT</div>
+        <h1>QUALIFICATION SCREENING</h1>
+        <div class="meta-text">
+            Check your eligibility for the Penultimate Void Profanation Settlement (Case #882-G). 
+            Financial restitution may be available for those affected by typographic inconsistencies.
+        </div>
+        <label class="question">To receive your determination notice and secure your place in the claim queue, provide your primary contact email:</label>
+        <input type="email" id="email" placeholder="REQUIRED: e.g. plaintiff@domain.com" required>
+        <div class="btn-group">
+            <button onclick="nextStep()">CHECK ELIGIBILITY</button>
+        </div>
     </div>
 
-    <!-- Step 2: The Opening Salvo -->
+    <!-- Step 2: Settlement Inquiry -->
     <div id="step-1" class="step">
-        <h1>Inquiry #1</h1>
+        <h1>CRITERIA ANALYSIS</h1>
         <div class="meta-text">
-            This survey is an investigation into the widening chasm between the rhythmic pauses of a slower age and the breathless, compressed proximity of digital text. By selecting an answer, you are signing a declaration of loyalty to the Penultimate Void Profanation.
+            The following question is critical to determining your status as a class member. 
+            Accuracy is paramount for legal processing.
         </div>
-        <label class="question">The following sentence contains a questionable amount of white space after the period. Do you believe it is performing its duty correctly—there.  There are two spaces here, are there not?</label>
+        <label class="question">Regarding the spaced bar syntax discrepancy (the "Double-Space Violation"): Do you maintain that this constitutes a breach of cognitive and aesthetic contract between author and reader?</label>
         <div class="btn-group">
-            <button onclick="nextStep()">YES</button>
-            <button onclick="nextStep()">NO</button>
+            <button onclick="nextStep()">AFFIRMATIVE</button>
+            <button onclick="nextStep()">NEGATIVE</button>
         </div>
     </div>
 
-    <!-- Step 3: The Deposition (Dropdowns) -->
+    <!-- Step 3: Detailed Data Collection -->
     <div id="step-2" class="step">
-        <h1>Administrative Inquiry</h1>
+        <h1>CLAIM DETAILS</h1>
+        <div class="warning-box">
+            This section is used to categorize the severity of your damages.
+        </div>
         
-        <label class="question">What necessitated this allegiance?</label>
+        <label class="question">Basis for inclusion in the class action:</label>
         <select id="q1">
-            <option>Family tradition</option>
-            <option>Association with typewriter elements</option>
-            <option>Personal moral imperative</option>
-            <option>A dream I had about geometry</option>
-            <option>I prefer a visual buffer between thoughts</option>
+            <option>Lifelong commitment to typographic standards</option>
+            <option>Direct physiological suffering from inconsistent spacing</option>
+            <option>Professional background in theological manuscripting</option>
+            <option>The dreams mandated it</option>
+            <option>Competitive animosity towards the digital spread</option>
         </select>
 
-        <label class="question">Has this realization informed your distrust of the modern internet?</label>
+        <label class="question">Level of psychological impact:</label>
         <select id="q2">
-            <option>Yes, it confirmed my fears</option>
-            <option>Yes, but only slightly</option>
-            <option>No</option>
-            <option>It constitutes the foundation of my anarchism</option>
+            <option>Severe alarm and disposition shift</option>
+            <option>Moderate irkiness and antisocial withdrawal</option>
+            <option>Temporary catatonia</option>
+            <option>Deep metaphysical questioning</option>
         </select>
 
-        <label class="question">How would you like the digital landscape to rectify this injustice?</label>
+        <label class="question">Preferred remedy for industry concerns:</label>
         <select id="q3">
-            <option>Automatic retrofitting of the space bar</option>
-            <option>Phasing out of sans-serif fonts</option>
-            <option>A public apology from Bill Gates</option>
-            <option>Temporary suspension of all social media</option>
+            <option>Mandatory standardized font restrictions</option>
+            <option>Financial penalty for each misused white space</option>
+            <option> PUBLIC Apology assigned to the 21st century</option>
+            <option>Temporal reversal to the mid-19th century</option>
         </select>
 
-        <button onclick="nextStep()">NEXT SECTION</button>
-    </div>
-
-    <!-- Step 4: Free Response -->
-    <div id="step-3" class="step">
-        <div class="meta-text">
-            As you type, be aware that any discrepancy between your stated beliefs and your actual physical spacing in this text area will be permanently logged as proof of cognitive dissonance.
-        </div>
-        <label class="question">Additional objections or supportive statements pertinentes to this grievance:</label>
-        <textarea id="free-response" rows="5" placeholder="Type here..."></textarea>
-        <button onclick="nextStep()">SUBMIT LOG</button>
-    </div>
-
-    <!-- Step 5: The Cause -->
-    <div id="step-4" class="step">
-        <h1>The Capgras Clause</h1>
-        <div class="meta-text">
-            Your grievance has been recorded. Your contribution now turns toward the Capgras Syndrome Support Network. Capgras is a rare neurological condition where patients believe that their loved ones and friends have been replaced by malicious impostors.
-        </div>
-        <p>The terror of living with an imposter’s mask is industry-recognized as one of the most profound forms of isolation. Your processing fee aids in the restoration of their world.</p>
         <div class="btn-group">
-            <button onclick="nextStep()">PROCEED TO ACCOUNTING</button>
+            <button onclick="nextStep()">PROCEED TO TESTIMONY</button>
         </div>
     </div>
 
-    <!-- Step 6: The Upcharge / Checkout -->
+    <!-- Step 4: Testimony/Statement -->
+    <div id="step-3" class="step">
+        <h1>FORMAL COMPLAINT STATEMENT</h1>
+        <div class="meta-text">
+            Your responses below will serve as the evidentiary basis for your claim. 
+            Avoid obfuscation.
+        </div>
+        <label class="question">Describe in detail the nature of the Profanation as it manifests in your cotidiano life:</label>
+        <textarea id="free-response" rows="6" placeholder="Describe your injury and loss..."></textarea>
+        <div class="btn-group">
+            <button onclick="nextStep()">SUBMIT STATEMENT</button>
+        </div>
+    </div>
+
+    <!-- Step 5: Notification and Next Steps -->
+    <div id="step-4" class="step">
+        <h1>CASING NOTICE</h1>
+        <div class="hero-banner">ESTABLISHED CLAIMANTED</div>
+        <div class="meta-text">
+            Your information is being verified against the 
+            Capgras Dysphoria Registers and the Universal Void Indexes.
+        </div>
+        <p>While your claim is pending, you may choose to support the 
+           <strong>Capgras Syndrome Support Network</strong>—a foundation 
+           dedicated to individuals who cease to recognize their loved ones as themselves. 
+           Your deductible contribution aids in their profound disorientation.</p>
+        <div class="btn-group">
+            <button onclick="nextStep()">VIEW SETTLEMENT OPTIONS</button>
+        </div>
+    </div>
+
+    <!-- Step 6: Settlement Options -->
     <div id="step-5" class="step">
-        <h1>Settlement Requirements</h1>
+        <h1>ADMINISTRATIVE FEE SCHEDULE</h1>
+        <div class="warning-box">
+            Failure to settle processing fees may lead to the permanent 
+            expungement of your claim from the record.
+        </div>
         
         <div class="pricing-table">
-            <strong>Option A: Silence the Notices</strong>
-            <div class="price-strike">$4.99</div>
-            <div class="price-current">$3.99</div>
-            <p>Cease all further comms regarding Case #882-G.</p>
+            <strong>Tier 1: Standard
+            </strong>
+            <div class="price-strike">$9.99</div>
+            <div class="price-current">$4.99</div>
+            <p>Basic record keeping of your grievance for corporate archiving.</p>
         </div>
 
         <div class="pricing-table">
-            <strong>Option B: Data Sequestration</strong>
-            <div class="price-strike">$4.99</div>
-            ~~$3.99~~ 
-            <span style="color: red; font-weight: bold;">$2.99 (LIMITED TIME)</span>
-            <p>Instructs server to stop selling your identified profile metrics.</p>
+            <strong>Tier 2: Enhanced Archiving 
+            </strong>
+            <div class="price-strike">$19.99</div>
+            <div class="price-current">$8.99</div>
+            <p>Prevention of automated record purging and preferential queue placement.</p>
         </div>
 
-        <div class="pricing-table" style="border-color: var(--accent-color);">
-            <strong>COMBO BUNDLE: The Grand Silence</strong>
-            <div class="price-current">$5.99</div>
-            <p>Full data sequestration plus lifelong removal from all future litigation notifications, including a Commemorative Case #882-G Vindication Certificate shipped via mail.</p>
+        <div class="pricing-table" style="border: 3px solid var(--accent-color);">
+            <strong>Tier 3: Perpetuity Seal
+            </strong>
+            <div class="price-current">$29.99</div>
+            <p>Lifecycle inclusion in every subsequent Void Profanation filing and a 
+               physical certificate of origin sent to your verified address.</p>
         </div>
 
-        <button onclick="completion()">COMPLETE TRANSACTION</button>
+        <div class="btn-group">
+            <button onclick="completion()">AUTHORIZE SETTLEMENT</button>
+        </div>
     </div>
 
-    <!-- Step 7: Exit -->
+    <!-- Step 7: Closing -->
     <div id="step-6" class="step">
-        <h1>Observation Segment Concluded</h1>
-        <p>Thank you for participating in this Syntax Imperialism Analysis. Your gratitude is appreciated, though unnecessary. We are monitoring your activity through the email provided. Do not delete your cookies.</p>
-        <button onclick="location.reload()">CLOSE FILE</button>
+        <div class="hero-banner">FILING COMPLETE</div>
+        <h1>ENROLLMENT CONFIRMED</h1>
+        <p>Your record has been immortalized in the archives of Case #882-G. Be prepared for 
+           sporadic communication via the email address provided. Do not attempt to 
+           contact the court unless prompted; your silence constitutes legal compliance.</p>
+        <div class="btn-group">
+            <button onclick="location.reload()">CLOSE FILE</button>
+        </div>
     </div>
 </div>
 
